@@ -59,21 +59,4 @@ public class CalculationService {
         return value.setScale(SCALE, RoundingMode.HALF_UP);
     }
 
-//    public boolean isProductFitsByDimensions(Product product, StoragePlace place) {
-//        return product.getLengthCm().compareTo(place.getLengthCm()) <= 0
-//                && product.getWidthCm().compareTo(place.getWidthCm()) <= 0
-//                && product.getHeightCm().compareTo(place.getHeightCm()) <= 0;
-//    }
-
-//    public boolean canPlaceProduct(Product product,
-//                                   StoragePlace place,
-//                                   StoragePlaceState state,
-//                                   Integer quantity) {
-//        BigDecimal totalVolume = calculateTotalVolume(product, quantity);
-//        BigDecimal totalWeight = calculateTotalWeight(product, quantity);
-//
-//        return isProductFitsByDimensions(product, place)
-//                && totalVolume.compareTo(calculateFreeVolume(place, state)) <= 0
-//                && totalWeight.compareTo(calculateFreeWeight(place, state)) <= 0;
-//    }
 }
