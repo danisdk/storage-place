@@ -87,6 +87,12 @@ mvn javafx:run --dev-test-outcome
 mvn javafx:run --dev-test-transfer
 ```
 
+Сборка
+
+```bash
+mvn clean package
+```
+
 ## Основные разделы программы
 
 В интерфейсе доступны вкладки:
