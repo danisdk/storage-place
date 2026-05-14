@@ -49,14 +49,14 @@ src/main/resources/ru/storageplace/application.properties
 
 ```properties
 db.url=jdbc:postgresql://localhost:5432/storage_place
-db.username=postgres
+db.usern=postgres
 db.password=your_password
 ```
 
 Где:
 
 * `db.url` — строка подключения к базе PostgreSQL;
-* `db.username` — имя пользователя PostgreSQL;
+* `db.user` — имя пользователя PostgreSQL;
 * `db.password` — пароль пользователя PostgreSQL.
 
 ## Запуск проекта

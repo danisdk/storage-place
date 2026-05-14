@@ -34,9 +34,16 @@ public class StorageBalanceTab {
         root.getStyleClass().add("tab-page");
         BorderPane.setMargin(toolbar, new Insets(0,0,5,0));
 
+        Tab tab = new Tab("Остатки", root);
+        tab.setOnSelectionChanged(event -> {
+            if (tab.isSelected()) {
+                refresh();
+            }
+        });
+
         refresh();
 
-        return new Tab("Остатки", root);
+        return tab;
     }
 
     private void configureTable() {
